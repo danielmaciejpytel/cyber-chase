@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "cyber-chase.sln"
+    "dotnet.defaultSolution": "cyber-chase.slnx"
 }
