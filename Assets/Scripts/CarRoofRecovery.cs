@@ -5,10 +5,14 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(Rigidbody))]
 public sealed class CarRoofRecovery : MonoBehaviour
 {
-    [SerializeField, Range(-1f, 1f)] private float activationUpDot = -0.15f;
-    [SerializeField, Range(-1f, 1f)] private float releaseUpDot = 0.75f;
-    [SerializeField, Min(0f)] private float rollAcceleration = 4f;
-    [SerializeField, Min(0.1f)] private float maxRollAngularSpeed = 1.8f;
+    [Header("Activation")]
+    [SerializeField, Range(-1f, 1f)] private float activationUpDot = 0.35f;
+    [SerializeField, Range(-1f, 1f)] private float releaseUpDot = 0.8f;
+
+    [Header("Recovery Physics")]
+    [SerializeField, Min(0f)] private float rollAcceleration = 32f;
+    [SerializeField, Min(0f)] private float liftAcceleration = 3.5f;
+    [SerializeField, Min(0.1f)] private float maxRollAngularSpeed = 2.6f;
 
     private Rigidbody m_Body;
     private bool m_IsRecovering;
@@ -49,6 +53,7 @@ public sealed class CarRoofRecovery : MonoBehaviour
         }
 
         m_Body.WakeUp();
+        m_Body.AddForce(Vector3.up * liftAcceleration, ForceMode.Acceleration);
         m_Body.AddTorque(rollAxis * (rollInput * rollAcceleration), ForceMode.Acceleration);
     }
 
