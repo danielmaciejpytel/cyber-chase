@@ -217,6 +217,26 @@ PrefabInstance:
       propertyPath: m_UiScaleMode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 224592847146587088, guid: 5d2cbdef773578849a5333b7256dfd0d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -148.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 224592847146587088, guid: 5d2cbdef773578849a5333b7256dfd0d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 24.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 224665480021206776, guid: 5d2cbdef773578849a5333b7256dfd0d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -148.32997
+      objectReference: {fileID: 0}
+    - target: {fileID: 224665480021206776, guid: 5d2cbdef773578849a5333b7256dfd0d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 105.369995
+      objectReference: {fileID: 0}
     - target: {fileID: 224693034945382052, guid: 5d2cbdef773578849a5333b7256dfd0d,
         type: 3}
       propertyPath: m_Pivot.x
@@ -364,7 +384,7 @@ GameObject:
   - component: {fileID: 1464776024}
   - component: {fileID: 1464776023}
   m_Layer: 0
-  m_Name: Kamera Izometryczna
+  m_Name: IsometricCam
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
