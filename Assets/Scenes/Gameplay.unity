@@ -1360,8 +1360,6 @@ GameObject:
   - component: {fileID: 970763885}
   - component: {fileID: 970763884}
   - component: {fileID: 970763889}
-  - component: {fileID: 970763891}
-  - component: {fileID: 970763890}
   - component: {fileID: 970763892}
   - component: {fileID: 970763893}
   m_Layer: 0
@@ -1481,32 +1479,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scanlineIntensity: 30
   scanlineWidth: 2
---- !u!114 &970763890
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 970763882}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3742b3db229aa4af88a4485f7a021c8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shift: 0.001
---- !u!114 &970763891
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 970763882}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51fc26c2daf04436db5111015e7ecc8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  intensity: 1.21
 --- !u!114 &970763892
 MonoBehaviour:
   m_ObjectHideFlags: 0
